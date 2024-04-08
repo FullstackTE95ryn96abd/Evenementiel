@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo {
+    width: 10%;
+    margin-left: 1%;
+    position: absolute;
+}
+
+.Ban-1 {
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .ban {
+    width: 100%;
+    display: block; 
+  }
+  
+  .Ban-1 .titre {
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    margin-right: -6%;
+    text-align: center;
+    
+    
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .Ban-1 h1 {
+    top: 10vw; 
+    font-size: 4vw;
+    color: white;
+  }
+  
