@@ -1,0 +1,318 @@
+/* Styles pour le header */
+header {
+    background-color:black;
+    padding: 2%;
+}
+
+
+.nav_abd {
+    display: grid;
+}
+
+.logo_abd {
+    top: 0;
+    left: 15%;
+    width: 155px;
+    height: auto;
+    overflow: hidden;
+}
+
+.logo_abd img{
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+#facebook{
+    right: 51%;
+}
+
+.menu_abd {
+    color: #fff;
+    position: absolute;
+    top: 13%;
+    left: 29%;
+    cursor: pointer;
+}
+
+#croix {
+    left: 49.5%;
+    font-size: 30px; /* Taille de la police pour le symbole */
+}
+
+.menu_header2{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat();
+}
+
+.menu_header2 h5{
+    position: absolute;
+    color: white;
+    left: 7%;
+}
+
+.pages h3{
+    color: white;
+    text-align: right;
+    padding-top: 11%;
+}
+
+.pages h1{
+    color: white;
+    text-align: center;
+}
+
+.pages a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.alternative_header{
+    display: none;
+}
+
+.reservation_abd {
+    color: black;
+    position: absolute;
+    top: 13%;
+    left: 81%;
+    border-radius: 17px;
+    background-color: #fff;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.reservation_abd:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.banner_abd{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner_abd div{
+    overflow: hidden;
+}
+
+.banner_abd div img{
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.filter_abd{
+    text-align: center;
+    color: #fff;
+    padding-top: 19%;
+}
+
+.menu_toggle {
+    display: none;
+    width: 1fr;
+    height: 1000px;
+    background-color: #d3aaaa;
+    margin: 5px;
+    color: #2a0101;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_toggle.active {
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+section h1{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.celebration_mariage{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1fr));
+    gap: 1%;
+}
+
+.celebration_mariage div img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.celebration_mariage div p{
+    text-align: center;
+}
+
+/* Styles pour la galerie d'images */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Styles pour la carte de produit Forfait Mariage */
+
+.wedding-package {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wedding-package:hover {
+    transform: translateY(-5px);
+}
+
+.wedding-package img {
+    width: fit-content;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.wedding-package .product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.wedding-package .product-info p {
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+}
+
+.download-button {
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+    background-color:white;
+    color: black;
+}
+
+#mail:hover strong{
+    color: black;
+}
+
+.download-button i {
+    margin-right: 5px;
+}
+
+
+/* Styles pour les services du forfaits mariage */
+.product-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    margin-top: 10px;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.footer_img img{
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
