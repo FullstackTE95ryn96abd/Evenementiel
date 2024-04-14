@@ -193,19 +193,276 @@ line-height: 1.5;
     .vr {
         display: flex;
         display: grid;
-        grid-template-columns: repeat(2,1fr);    
+        grid-template-columns: repeat(2,1fr);   
+        background-color: #EBEBE0; 
         
     }
 
-    
-
     .text {
-        justify-content:center;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-       
-        max-width: 50%;
-        border-spacing: 0;
-        background-color: #EBEBE0;
-    }
+      justify-content:center;
+      display: flex;
+      flex-direction: column;
+      
+      margin: 5em;
+     
+      border-spacing: 0;
+  }
+
+  .text h1{
+    margin-bottom: 1em;
+    font-size: 3em;
+   font-family:  Crimson Text;
+   font-weight: normal;
+  }
+
+  .text p{
+    margin-bottom: 5em;
+    font-size:125%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: normal;
+  }
+/*
+  .text h2{
+    margin-bottom: 3em;
+    font-size:150%;
+   font-family:  Crimson Text;
+   font-weight: normal;
+  }
+ 
+  */
+
+  .text h2 {
+    font-size: 150%;
+    font-family: garamond, serif;
+    font-weight: normal;
+    position: relative;
+}
+
+.text h2:not(:last-of-type) { /* Utilisation de :not(:last-of-type) */
+    margin-bottom: 3.5em;
+}
+
+.text h2:not(:last-of-type)::after { /* Appliquer le trait seulement aux titres sauf le dernier */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -130%;
+    width: 85%;
+    height: 1px;
+    background-color: black;
+}
+
+
+
+.vr-2 {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);   
+  background-color: #ffffff; 
+  margin-top: 10%;
+  
+}
+.container-2 {
+  width: 80%;
+  height: 900px; /* Spécifiez une hauteur fixe pour l'image */
+}
+
+.container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajustez la propriété object-fit selon vos besoins */
+  object-position: center; /* Centrez l'image dans l'élément */
+}
+  .text-2 {
+  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  margin-left: -4em;
+  margin-top: -20em;
+  border-spacing: 0;
+  }
+
+
+  .text-2 h1{
+    margin-bottom: 1em;
+    font-size: 5em;
+  font-family:  Crimson Text;
+  font-weight: normal;
+  }
+
+.text-2 p{
+  margin-top: 5em;
+  margin-bottom: 3em;
+  font-size:125%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: normal;
+}
+
+
+.text-2 h2 {
+  font-size: 150%;
+  font-family: garamond, serif;
+  font-weight: normal;
+  position: relative;
+}
+
+.text-2 h2:not(:last-of-type) { /* Utilisation de :not(:last-of-type) */
+  margin-bottom: 3.5em;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  width: 10em;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  background-size: 400%;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 0 0 0 1px black; /* Ajoute un contour noir fin */
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(255, 255, 255) 10.8%,
+    rgb(0, 0, 0) 94.3%
+  );
+  transition: all 0.475s;
+}
+.button-row {
+  display: flex;
+  
+}
+
+.Nourriture{
+  background-color: #F4F4F4;
+}
+
+.carousel {
+  margin-left: 2em;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  gap: 60px;
+  padding: 20px 0;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  height: 570px; /* Hauteur fixe pour toutes les images */
+  margin-right: 20px;
+  border-radius: 50px;
+  object-fit: cover; /* Redimensionner l'image pour remplir le conteneur tout en conservant le ratio d'aspect */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Masquez la barre de défilement horizontale (uniquement pour Chrome/Safari) */
+}
+
+.text-3 {
+  flex-direction: column;
+  margin-left: 2em;
+  border-spacing: 0;
+  padding-top: 3em;
+  }
+
+
+  .text-3 h1{
+    margin-bottom: 1em;
+    font-size: 5em;
+  font-family:  Crimson Text;
+  font-weight:lighter;
+  }
+
+.text-3 p{
+  
+  margin-bottom: 3em;
+  font-size:150%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: normal;
+}
+
+
+
+.carousel-2 {
+  margin-left: 2em;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  gap: 60px;
+  padding: 20px 0;
+}
+
+.carousel-2 img {
+  flex: 0 0 auto;
+  height: 570px; /* Hauteur fixe pour toutes les images */
+  margin-right: 20px;
+  border-radius: 50px;
+  object-fit: cover; /* Redimensionner l'image pour remplir le conteneur tout en conservant le ratio d'aspect */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Masquez la barre de défilement horizontale (uniquement pour Chrome/Safari) */
+}
+
+
+.text-4 {
+  margin-top:6em ;
+  flex-direction: column;
+  margin-left: 2em;
+  border-spacing: 0;
+  padding-top: 3em;
+  }
+
+
+  .text-4 h1{
+    margin-bottom: 1em;
+    font-size: 4em;
+  font-family:  Crimson Text;
+  font-weight:lighter;
+  }
+
+.text-4 p{
+  
+  margin-bottom: 3em;
+  font-size:150%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: normal;
+}
+
+footer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajustez la propriété object-fit selon vos besoins */
+  object-position: center; /* Centrez l'image dans l'élément */
+}
+
+
+
+
+
+/*PAGE LIEUX*/
+
