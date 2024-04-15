@@ -1,0 +1,29 @@
+.contact-form, .reservation-form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contact-form label, .reservation-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea,
+.reservation-form input[type="text"], .reservation-form input[type="email"], .reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button, .reservation-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover, .reservation-form button:hover {
+    background-color: #0056b3;
+}
