@@ -1,13 +1,48 @@
 /* Styles pour le header */
+
+@media only screen and (max-width: 555px) {
+    .banner_abd{
+        padding-left: 33%;
+        padding-top: 5%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr); /* Utilisez grid-template-rows pour définir le modèle de lignes */
+        grid-auto-flow: column;
+    }
+
+    .reservation_abd {
+        color: black;
+        position: absolute;
+        top: 11.5%;
+        right: 15%;
+        border-radius: 17px;
+        background-color: #fff;
+        padding: 9px;
+        cursor: pointer;
+        font-size: small;
+    }
+
+    .menu_abd {
+    color: #fff;
+    position: absolute;
+    top: 13%;
+    left: 49%;
+    cursor: pointer;
+    font-size: small;
+    }
+
+    .product-info h1{
+        font-size: small;
+    }
+}
+
+
 header {
     background-color:black;
     padding: 2%;
 }
 
 
-.nav_abd {
-    display: grid;
-}
+
 
 .logo_abd {
     top: 0;
@@ -30,7 +65,7 @@ header {
     color: #fff;
     position: absolute;
     top: 13%;
-    left: 29%;
+    left: 49%;
     cursor: pointer;
 }
 
@@ -74,8 +109,8 @@ header {
 .reservation_abd {
     color: black;
     position: absolute;
-    top: 13%;
-    left: 81%;
+    top: 11.5%;
+    right: 15%;
     border-radius: 17px;
     background-color: #fff;
     padding: 9px;
@@ -97,6 +132,10 @@ header {
     overflow: hidden;
 }
 
+.banner_abd div div h1{
+    text-align: center;
+}
+
 .banner_abd div img{
     max-width: 100%;
     max-height: fit-content;
@@ -105,7 +144,6 @@ header {
 .filter_abd{
     text-align: center;
     color: #fff;
-    padding-top: 19%;
 }
 
 .menu_toggle {
@@ -302,7 +340,7 @@ section h1{
 }
 
 .footer_img img{
-    padding: 30px;
+    
     max-width: 100%;
     max-height: 100%;
 }
