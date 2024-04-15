@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" alt="fond-image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" alt="logoig">
 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Lieux.css" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.sheets.css" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
@@ -22,16 +24,53 @@
 <title>Skyview</title>
     </head> 
     <body>
-<header>
-    <div class="Ban-1">
-        <img class="logo" src="image_index/image-removebg-preview (1).png">
-        <img class="ban" src="image_index/Banniere.webp"/>
-        <h1 class="titre"><br>INTEMPOREL 
-            </br>CEREMONIE</h1>
-            <button class="btn">Mariage
-            </button>
-    </div>
-</header>
+        <header id="header1">
+            <nav class="nav_abd">
+                <div class="logo_abd"><img src="image_celebrations\image-removebg-preview (1).png"></div>
+                <div class="menu_abd" id="Logo">Menu</div>
+                <div class="reservation_abd"><a style="text-decoration: none; color: inherit;" href="mariage.html">Réservation</a></div>
+            </nav>
+    
+            <div class="banner_abd">
+                <div class="gallery-item">
+                    <img src="image_celebrations\image_baniere.png" alt="Inspiration 2">
+                </div>
+    
+                <div>
+                    <div class="product-info">
+                        <h1 style="color: white;">MARIAGES</h1>
+                        <h1 style="color: white;">AU SKYVIEW</h1>
+                        <h1 style="color: white;">RANCH</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <header class="alternative_header" id="header2">
+            <nav class="nav_abd" id="nav_header2">
+                <div class="logo_abd"><img src="image_celebrations\image-removebg-preview (1).png"></div>
+                <div class="menu_abd" id="croix">&#x2716;</div>
+            </nav>
+    
+            <div class="menu_header2" id="menuToggle">
+                <div class="ligne">
+                    <div class="pages"><h5>01</h5><a href="#"><h1>Accueil</h1></a></div>
+                </div>
+    
+                <div class="ligne">
+                    <div class="pages"><h5>02</h5><a href="celebration.html"><h1>Services</h1></a></div>
+                </div>
+    
+                <div class="ligne">
+                    <div class="pages"><h5>03</h5> <a href="#"><h1>Lieux</h1></a></div>
+                </div>
+    
+                <div class="ligne">
+                    <div class="pages"><h5>04</h5> <a href="mariage.html"><h1>Contact & Réservation</h1></a></div>
+                </div>
+            </div>
+            <div class="pages"><h3>© RANCH Skyview 2024</h3></div>
+        </header>
 
     <div>
 <h1 class="titre"><br>BIENVENUE <br>AU SKYVIEW<br> RANCH 
@@ -144,9 +183,24 @@
         </div>
 </section>
 <footer>
-    <img src="image_index/DALL·E 2024-03-30 17.06.25 - Create an original, wide-banner formatted illustrated map of a resort complex without any text, situated in a vast lush countryside setting. The illus.webp" alt="img-ranch">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>CONTACTEZ-NOUS POUR DEMANDER UNE VISITE !</h4>
+            <p>+33 818 889 628</p>
+            <button class="button2">
+                <span class="button-content2">Info@evenementiel.com </span>
+              </button>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><img src="Image lieux/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="Image lieux/instagram.png" alt="Instagram"></a>
+                
+            </div>
+        </div>
+       
+    </div>
+   
 </footer>
-
+<script src="javascript.js"></script>
 </body>
 <script src="Java-script.js"></script>
 <!-- Slick Carousel JS -->
