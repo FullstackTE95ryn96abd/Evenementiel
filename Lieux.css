@@ -214,20 +214,20 @@ color:black;
 .galerie-image {
     background-color: #282828;
     display: flex;
-    padding: 20px; /* Ajouter de l'espace autour du contenu */
+    padding: 20px; 
 }
 
 .galerie-content {
     display: flex;
-    flex-direction: row; /* Les éléments sont disposés horizontalement */
+    flex-direction: row; 
     width: 200%;
     margin-top: 10em;
     
 }
 
 .galerie-text3 {
-    flex: 1; /* Prend autant d'espace que possible */
-    margin-right: 1%; /* Ajouter un peu d'espace entre le texte et l'image */
+    flex: 1; 
+    margin-right: 1%; 
     margin-top: 10em;
     flex-direction: column;
 }
@@ -238,8 +238,8 @@ color:black;
 }
 
 .Lieux img {
-    width: 100%; /* Remplir la largeur du conteneur */
-    height: auto; /* Ajuster la hauteur en conséquence pour conserver le ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .galerie-text3 h1 {
@@ -274,7 +274,7 @@ color: #000000;
 border: none;
 cursor: pointer;
 margin-right: 10px;
-box-shadow: 0 0 0 1px black; /* Ajoute un contour noir fin */
+box-shadow: 0 0 0 1px black; 
 }
 
 .button:hover::before {
@@ -314,8 +314,8 @@ padding: 20px; /* Ajouter de l'espace autour du contenu */
 /*4*/
 
 .galerie-text4 {
-    flex: 1; /* Prend autant d'espace que possible */
-    margin-right: 1%; /* Ajouter un peu d'espace entre le texte et l'image */
+    flex: 1; 
+    margin-right: 1%; 
     margin-top: 10em;
     flex-direction: column;
 }
@@ -326,8 +326,8 @@ padding: 20px; /* Ajouter de l'espace autour du contenu */
 }
 
 .Lieux img {
-    width: 100%; /* Remplir la largeur du conteneur */
-    height: auto; /* Ajuster la hauteur en conséquence pour conserver le ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .galerie-text4 h1 {
@@ -476,9 +476,6 @@ color:white;
     transition: all 0.475s;
   }
   
-  
-  
-    
         
         @media screen and (max-width: 1200px) {
             .galerie-content {
