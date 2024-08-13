@@ -1,5 +1,15 @@
 /* Styles pour le header */
+/* Ajoute de l'espace entre les éléments du menu burger */
+.ligne {
+    margin-bottom: 50px; /* Augmentez cette valeur pour plus d'espace */
+  }
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
 @media only screen and (max-width: 555px) {
     .banner_abd{
         padding-left: 33%;
@@ -174,22 +184,31 @@ section h1{
     padding-bottom: 1%;
 }
 
-.celebration_mariage{
+.celebration_mariage {
     display: grid;
-    grid-template-columns: repeat(2, minmax(1fr));
-    gap: 1%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%; /* Augmente l'espace entre les colonnes */
+    align-items: center; /* Centre verticalement le contenu */
 }
 
-.celebration_mariage div img{
-    width: 100%;
+.celebration_mariage div img {
+    width: 80%; /* Réduit la largeur de l'image */
     height: auto;
     border-radius: 10px 10px 0 0;
+    margin: 0 auto; /* Centre l'image horizontalement */
+    display: block;
 }
 
-.celebration_mariage div p{
-    text-align: center;
+.celebration_mariage div p {
+    text-align: justify; /* Justifie le texte pour un alignement uniforme */
+    font-family: Crimson Text; /* Utilisation d'une police plus lisible */
+    font-size: 1.1em; /* Légère augmentation de la taille du texte */
+    line-height: 1.6; /* Améliore la lisibilité avec un espacement des lignes */
+    padding: 20px; /* Ajoute de l'espace autour du texte */
+    background-color: #f8f8f8; /* Ajoute un fond léger pour mettre en valeur le texte */
+    border-radius: 0 0 10px 10px; /* Adapte les coins arrondis au fond du texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour un effet de profondeur */
 }
-
 /* Styles pour la galerie d'images */
 
 .gallery {
@@ -302,7 +321,7 @@ section h1{
     margin-right: 5px;
 }
 
-
+ 
 /* Styles pour les services du forfaits mariage */
 .product-grid {
     display: grid;

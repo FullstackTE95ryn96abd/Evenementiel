@@ -1,3 +1,15 @@
+    /* Ajoute de l'espace entre les éléments du menu burger */
+.ligne {
+    margin-bottom: 50px; /* Augmentez cette valeur pour plus d'espace */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+    
     .logo {
       width: 100%;
       margin-left: 1%;
